@@ -1,0 +1,1174 @@
+{
+    "type": "games",
+    "items": {
+        "IMG_0550-smol.jpg": {
+            "title": "Alla Ricerca di Nemo",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0563-smol.jpg": {
+            "title": "Animal Crossing: Let's Go to the City",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0421-smol.jpg": {
+            "title": "Animal Crossing: New Horizons",
+            "console": "Nintendo Switch",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "35.00"
+        },
+        "IMG_0556-smol.jpg": {
+            "title": "Another Code\u2122: R - A Journey into Lost Memories",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "15.00"
+        },
+        "IMG_0510-smol.jpg": {
+            "title": "Army of Two: The 40th Day",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0509-smol.jpg": {
+            "title": "Army of Two: The 40th Day",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0517-smol.jpg": {
+            "title": "ASSASSIN'S CREED II",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0521-smol.jpg": {
+            "title": "Assassin's Creed III - Exclusive Edition",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0553-smol.jpg": {
+            "title": "Azurik: Rise of Perathia",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0451-smol.jpg": {
+            "title": "Batman: Arkham Knight",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0423-smol.jpg": {
+            "title": "Bayonetta + Bayonetta 2",
+            "console": "Nintendo Switch",
+            "region": "PAL",
+            "cover_language": "DEU",
+            "estimated_price": "35.00"
+        },
+        "IMG_0486-smol.jpg": {
+            "title": "Bayonetta - Climax Edition",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "30.00"
+        },
+        "IMG_0499-smol.jpg": {
+            "title": "Binary Domain",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0456-smol.jpg": {
+            "title": "Blade Runner: The Final Cut",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0463-smol.jpg": {
+            "title": "Bloodborne",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0465-smol.jpg": {
+            "title": "Borderlands: The Handsome Collection",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "12.00"
+        },
+        "IMG_0520-smol.jpg": {
+            "title": "Brutal Legend",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0579-smol.jpg": {
+            "title": "Buzz! Junior: Jungle Party",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0493-smol.jpg": {
+            "title": "Buzz! Quiz TV",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0507-smol.jpg": {
+            "title": "Call of Duty: Black Ops",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0512-smol.jpg": {
+            "title": "Call of Duty: Modern Warfare 3",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "8.00"
+        },
+        "IMG_0524-smol.jpg": {
+            "title": "Call of Duty: Modern Warfare 3 - Limited Edition",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0554-smol.jpg": {
+            "title": "CAPCOM VS SNK 2 EO",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0440-smol.jpg": {
+            "title": "CAPTAIN TOAD: TREASURE TRACKER",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "15.00"
+        },
+        "IMG_0572-smol.jpg": {
+            "title": "Cartoon Network Racing",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0506-smol.jpg": {
+            "title": "Child of Eden",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0514-smol.jpg": {
+            "title": "Dante's Inferno",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0483-smol.jpg": {
+            "title": "Dante's Inferno - Limited Edition",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0468-smol.jpg": {
+            "title": "DARK SOULS III",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "20.00"
+        },
+        "IMG_0508-smol.jpg": {
+            "title": "Darksiders",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0453-smol.jpg": {
+            "title": "Darksiders II Deathinitive Edition",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0495-smol.jpg": {
+            "title": "DEAD SPACE 3 LIMITED EDITION SEALED",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "29.90"
+        },
+        "IMG_0454-smol.jpg": {
+            "title": "DEATH STRANDING",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0482-smol.jpg": {
+            "title": "Demon's Souls Edizione Black Phantom - Artbook & Soundtrack",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "35.00"
+        },
+        "IMG_0473-smol.jpg": {
+            "title": "Detroit: Become Human",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0573-smol.jpg": {
+            "title": "Devil May Cry 2",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        " .jpg": {
+            "title": "Diablo III: Reaper of Souls - Ultimate Evil Edition SEALD",
+            "console": "Xbox One",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "22.00"
+        },
+        "IMG_0445-smol.jpg": {
+            "title": "Diablo III: Reaper of Souls Ultimate Evil Edition",
+            "console": "Xbox One",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "20.00"
+        },
+        "IMG_0503-smol.jpg": {
+            "title": "Diggs: L'Investigatario Sealed",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0568-smol.jpg": {
+            "title": "Disney Epic Mickey - La Leggendaria Sfida di Topolino",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0491-smol.jpg": {
+            "title": "DJ Hero",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "9.00"
+        },
+        "IMG_0457-smol.jpg": {
+            "title": "Dragon Age: Inquisition",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0570-smol.jpg": {
+            "title": "Dragon Quest: L'odissea del Re maledetto",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "25.00"
+        },
+        "IMG_0476-smol.jpg": {
+            "title": "Dreams",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0492-smol.jpg": {
+            "title": "El Shaddai: Ascension of the Metatron",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0544-smol.jpg": {
+            "title": "ENTER THE MATRIX",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "7.50"
+        },
+        "IMG_0479-smol.jpg": {
+            "title": "EvolvE",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0584-smol.jpg": {
+            "title": "EyeToy: Kinetic",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0446-smol.jpg": {
+            "title": "Fable II",
+            "console": "Xbox 360",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "8.50"
+        },
+        "IMG_0464-smol.jpg": {
+            "title": "Fallout 4",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0489-smol.jpg": {
+            "title": "FIFA 10",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0540-smol.jpg": {
+            "title": "FIFA Football 2005",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0442-smol.jpg": {
+            "title": "FINAL FANTASY VII",
+            "console": "PlayStation",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "18.00"
+        },
+        "IMG_0455-smol.jpg": {
+            "title": "FINAL FANTASY VII ADVENT CHILDREN COMPLETE",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0475-smol.jpg": {
+            "title": "FINAL FANTASY VII REMAKE",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0586-smol.jpg": {
+            "title": "Final Fantasy X",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "10.00"
+        },
+        "IMG_0574-smol.jpg": {
+            "title": "FINAL FANTASY X-2",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "15.00"
+        },
+        "IMG_0587-smol.jpg": {
+            "title": "FINAL FANTASY XII",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0501-smol.jpg": {
+            "title": "FINAL FANTASY XIII",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0470-smol.jpg": {
+            "title": "FINAL FANTASY XV EDIZIOne ROYALE",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0543-smol.jpg": {
+            "title": "Forza Motorsport - Promotional Copy",
+            "console": "Xbox",
+            "region": "NTSC",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0532-smol.jpg": {
+            "title": "Futuridium Extended Play Deluxe - Limited Edition - Sealed",
+            "console": "PlayStation Vita",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "45.00"
+        },
+        "IMG_0458-smol.jpg": {
+            "title": "Futuridium Extended Play Deluxe - Sealed",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0466-smol.jpg": {
+            "title": "God of War",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "20.00"
+        },
+        "IMG_0577-smol.jpg": {
+            "title": "God of War Platinum",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0511-smol.jpg": {
+            "title": "Grand Theft Auto V",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "12.00"
+        },
+        "IMG_0537-smol.jpg": {
+            "title": "HALO 2 - PACK DE CARTES MULTIJOUERS - Version Premium",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "FRA",
+            "estimated_price": "20.00"
+        },
+        "IMG_0444-smol.jpg": {
+            "title": "HALO 5: GUARDIANS SEALD",
+            "console": "Xbox One",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "20.00"
+        },
+        "IMG_0551-smol.jpg": {
+            "title": "Harry Potter e la Camera dei Segreti",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0484-smol.jpg": {
+            "title": "HEAVY RAIN",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0461-smol.jpg": {
+            "title": "Horizon Zero Dawn",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0576-smol.jpg": {
+            "title": "ICO",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0494-smol.jpg": {
+            "title": "ICO & Shadow of the Colossus Classics HD",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "30.00"
+        },
+        "IMG_0536-smol.jpg": {
+            "title": "Indiana Jones and the Emperor's Tomb",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0459-smol.jpg": {
+            "title": "inFAMOUS Second Son",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0548-smol.jpg": {
+            "title": "Jade Empire",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0478-smol.jpg": {
+            "title": "JUST DANCE 2016",
+            "console": "Xbox One",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0487-smol.jpg": {
+            "title": "Kane & Lynch 2: Dog Days LIMITED EDITION",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0582-smol.jpg": {
+            "title": "Killer7",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0523-smol.jpg": {
+            "title": "Killzone 2",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0583-smol.jpg": {
+            "title": "Kingdom Hearts Platinum",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0500-smol.jpg": {
+            "title": "L.A. Noire: The Complete Edition",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0477-smol.jpg": {
+            "title": "LIFE IS STRANGE - Limited Edition",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "30.00"
+        },
+        "IMG_0513-smol.jpg": {
+            "title": "LittleBigPlanet",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0541-smol.jpg": {
+            "title": "Madden NFL 2003",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "5.00"
+        },
+        "IMG_0530-smol.jpg": {
+            "title": "Mafia II Limited Edition",
+            "console": "PC",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "30.00"
+        },
+        "IMG_0429-smol.jpg": {
+            "title": "Mario Kart 8",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "25.00"
+        },
+        "IMG_0558-smol.jpg": {
+            "title": "Mario Kart Wii",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0433-smol.jpg": {
+            "title": "MARIOKART 8",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0534-smol.jpg": {
+            "title": "MAX PAYNE",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "12.00"
+        },
+        "IMG_0516-smol.jpg": {
+            "title": "Metal Gear Rising: Revengeance",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "9.99"
+        },
+        "IMG_0569-smol.jpg": {
+            "title": "Metal Gear Solid 2: Sons of Liberty - Limited Edition",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0488-smol.jpg": {
+            "title": "Metal Gear Solid 4: Guns of the Patriots",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0469-smol.jpg": {
+            "title": "METAL GEAR SOLID V: THE PHANTOM PAIN - DGA 1 EDITION",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0505-smol.jpg": {
+            "title": "Michael Jackson The Experience",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "8.00"
+        },
+        "IMG_0580-smol.jpg": {
+            "title": "MYST III EXILE",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0502-smol.jpg": {
+            "title": "Ni no Kuni: Wrath of the White Witch",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0427-smol.jpg": {
+            "title": "Nintendo Land",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0434-smol.jpg": {
+            "title": "Nintendo Land",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0428-smol.jpg": {
+            "title": "Nintendo Land SEALD",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0431-smol.jpg": {
+            "title": "Pikmin 3",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0538-smol.jpg": {
+            "title": "Quantum Redshift",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0448-smol.jpg": {
+            "title": "Ratchet & Clank",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0519-smol.jpg": {
+            "title": "Ratchet & Clank: Armi di distruzione - Platinum",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0490-smol.jpg": {
+            "title": "Rayman Origins",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0485-smol.jpg": {
+            "title": "Rayman Origins - Edizione per Collezionisti",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "20.00"
+        },
+        "IMG_0474-smol.jpg": {
+            "title": "Red Dead Redemption II",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0497-smol.jpg": {
+            "title": "Red Dead Redemption: Game of the Year Edition",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0581-smol.jpg": {
+            "title": "Red Faction II",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0561-smol.jpg": {
+            "title": "Resident Evil",
+            "console": "Nintendo GameCube",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "20.00"
+        },
+        "IMG_0481-smol.jpg": {
+            "title": "Resident Evil 6",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "12.00"
+        },
+        "IMG_0480-smol.jpg": {
+            "title": "RESIDENT EVIL 7: biohazard",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "20.00"
+        },
+        "IMG_0588-smol.jpg": {
+            "title": "Resident Evil Code: Veronica X",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0498-smol.jpg": {
+            "title": "Resistance 3",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0425-smol.jpg": {
+            "title": "Rock Band Unplugged",
+            "console": "PSP",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0452-smol.jpg": {
+            "title": "SEKIRO: SHADOWS DIE TWICE",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0575-smol.jpg": {
+            "title": "SHADOW OF THE COLOSSI Sealed",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "20.00"
+        },
+        "IMG_0441-smol.jpg": {
+            "title": "SILENT HILL",
+            "console": "PlayStation",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0589-smol.jpg": {
+            "title": "Silent Hill 2",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "20.00"
+        },
+        "IMG_0522-smol.jpg": {
+            "title": "Sly Cooper: Thieves in Time",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0504-smol.jpg": {
+            "title": "Sorcery SEALD",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "25.00"
+        },
+        "IMG_0545-smol.jpg": {
+            "title": "SPHINX e la Mummia Pasticciona",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0435-smol.jpg": {
+            "title": "Splatoon",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0443-smol.jpg": {
+            "title": "STAR WARS BATTLEFRONT SEALED",
+            "console": "Xbox One",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0527-smol.jpg": {
+            "title": "STAR WARS KNIGHTS OF THE OLD REPUBLIC",
+            "console": "PC",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0546-smol.jpg": {
+            "title": "STAR WARS: JEDI OUTCAST - JEDI KNIGHT II",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0526-smol.jpg": {
+            "title": "Star Wars: Knights of the Old Republic II - The Sith Lords",
+            "console": "PC",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0430-smol.jpg": {
+            "title": "Super Mario 3D World",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "20.00"
+        },
+        "IMG_0566-smol.jpg": {
+            "title": "Super Mario Galaxy",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "15.00"
+        },
+        "IMG_0560-smol.jpg": {
+            "title": "Super Mario Galaxy 2",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "15.00"
+        },
+        "IMG_0555-smol.jpg": {
+            "title": "SUPER MARIO MAKER",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "20.00"
+        },
+        "IMG_0424-smol.jpg": {
+            "title": "Super Mario Maker 2",
+            "console": "Nintendo Switch",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "35.00"
+        },
+        "IMG_0559-smol.jpg": {
+            "title": "Super Smash Bros. Brawl",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0438-smol.jpg": {
+            "title": "Super Smash Bros. for Wii U",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0432-smol.jpg": {
+            "title": "Super Smash Bros. for Wii U",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0422-smol.jpg": {
+            "title": "Super Smash Bros. Ultimate",
+            "console": "Nintendo Switch",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "40.00"
+        },
+        "IMG_0533-smol.jpg": {
+            "title": "Tearaway - Il messaggero di carta",
+            "console": "PlayStation Vita",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0529-smol.jpg": {
+            "title": "The Blackwell Deception - Sealed",
+            "console": "PC",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0449-smol.jpg": {
+            "title": "THE EVIL WITHIN 2",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0447-smol.jpg": {
+            "title": "The Last Guardian - Limited Edition",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "25.00"
+        },
+        "IMG_0515-smol.jpg": {
+            "title": "The Last of Us",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0420-smol.jpg": {
+            "title": "The Legend of Zelda: Breath of the Wild",
+            "console": "Nintendo Switch",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "45.00"
+        },
+        "IMG_0565-smol.jpg": {
+            "title": "The Legend of Zelda: Skyward Sword",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0557-smol.jpg": {
+            "title": "The Legend of Zelda: Twilight Princess",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0467-smol.jpg": {
+            "title": "The Order: 1886",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0496-smol.jpg": {
+            "title": "The Ratchet & Clank Trilogy",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0552-smol.jpg": {
+            "title": "The Simpsons: Hit & Run",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "15.00"
+        },
+        "IMG_0460-smol.jpg": {
+            "title": "The Witcher 3: Wild Hunt",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "20.00"
+        },
+        "IMG_0571-smol.jpg": {
+            "title": "TimeSplitters 2",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0585-smol.jpg": {
+            "title": "TimeSplitters Future Perfect",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0528-smol.jpg": {
+            "title": "TITANFALL 2",
+            "console": "PC",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "12.50"
+        },
+        "IMG_0542-smol.jpg": {
+            "title": "Tom Clancy's Rainbow Six 3",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "8.00"
+        },
+        "IMG_0539-smol.jpg": {
+            "title": "Tom Clancy's SPLINTER CELL",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0549-smol.jpg": {
+            "title": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
+            "console": "Xbox",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0518-smol.jpg": {
+            "title": "Uncharted 2: Among Thieves - Special Edition",
+            "console": "PlayStation 3",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0472-smol.jpg": {
+            "title": "Uncharted 4: Fine di un Ladro",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "12.50"
+        },
+        "IMG_0462-smol.jpg": {
+            "title": "Uncharted: L'Eredit\u00e0 Perduta",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "20.00"
+        },
+        "IMG_0450-smol.jpg": {
+            "title": "Until Dawn: Extended Edition",
+            "console": "PlayStation 4",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        },
+        "IMG_0531-smol.jpg": {
+            "title": "Virtua Tennis 4 World Tour Edition",
+            "console": "PlayStation Vita",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0564-smol.jpg": {
+            "title": "Wii Fit",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "10.00"
+        },
+        "IMG_0436-smol.jpg": {
+            "title": "Wii Party U",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "14.99"
+        },
+        "IMG_0426-smol.jpg": {
+            "title": "Wii Party U",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "12.00"
+        },
+        "IMG_0562-smol.jpg": {
+            "title": "Wii Sports Resort",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "10.00"
+        },
+        "IMG_0578-smol.jpg": {
+            "title": "WWII: Tank Battles",
+            "console": "PlayStation 2",
+            "region": "PAL",
+            "cover_language": "ITA",
+            "estimated_price": "5.00"
+        },
+        "IMG_0439-smol.jpg": {
+            "title": "Yoshi's Woolly World",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "20.00"
+        },
+        "IMG_0567-smol.jpg": {
+            "title": "ZACK & WIKI: Quest for Barbaros' Treasure",
+            "console": "Wii",
+            "region": "PAL",
+            "cover_language": "NLD",
+            "estimated_price": "15.00"
+        },
+        "IMG_0437-smol.jpg": {
+            "title": "ZombiU",
+            "console": "Wii U",
+            "region": "PAL",
+            "cover_language": "ENG",
+            "estimated_price": "15.00"
+        }
+    }
+}
