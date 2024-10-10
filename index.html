@@ -1,301 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Catalog</title>
     <style>
         body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 20px;
-          background-color: #f4f4f4; /* Light background for better contrast */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-    
-        h1 {
-          color: #333; /* Darker text for headings */
-          position: fixed;
-          top: 10px;
-          z-index: 1000;
-          padding: 8px 12px;
-          border: none;
-          border-radius: 5px;
-          left: 50%; 
-        }
-    
+
         h2 {
-          text-align: center;
-          font-size: 0.8em;
-          font-style: italic;
-          color: #166;
-          padding: 0;
-        }
-    
-        .filters {
-          margin-bottom: 20px;
-          text-align: center;
-        }
-    
-        .filter {
-          display: inline-block;
-          margin: 0 10px 20px; /* Adjust spacing for better layout */
+            font-size: 0.9em;
+            font-style: italic;
+            color: #166;
+            margin-right: 20px;
         }
 
-        label {
-            text-align: center;
-          font-size: 0.8em;
-          font-style: italic;
-          padding: 0;
-        }
-
-        
         .top-bar {
+            display: flex;
+            align-items: center;
             justify-content: space-between;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #ffffff; /* Light gray background */
-            padding: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            z-index: 1000; /* Ensure it's on top */
-            overflow: hidden; /* Prevent scrolling within the top bar */
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .top-bar>.summary {
             display: flex;
-            justify-content: space-around; /* Distribute elements evenly */
-            align-items: center; /* Vertically center items */
+            align-items: center;
         }
 
-        .top-bar > div { /* Style each group of elements within the top bar */
-            display: flex; /* Make each group a flex container */
-            align-items: center; /* Vertically center items within each group */
-            margin: 0; /* Remove default margins */
-        }
-
-        .top-bar > div + div { /* Add spacing between groups, except the first one */
-            margin-left: 20px; 
+        .top-bar>.toggle-view {
+            margin-right: auto;
         }
 
         #itemContainer {
-          margin-top: 100px;
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Slightly wider cards */
-          gap: 30px;
-          justify-content: center;
+            margin-top: 120px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            justify-content: center;
         }
-    
+
         .item {
-          border: 1px solid #ddd;
-          padding: 0x;
-          padding-bottom: 0px;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          height: 100%;
-          background-color: #fff; /* White background for cards */
-          border-radius: 8px; /* Rounded corners */
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-          transition: transform 0.2s; /* Smooth hover effect */
+            border: 1px solid #ddd;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
         }
-    
+
         .item:hover {
-          transform: translateY(-3px); /* Hover lift effect */
+            transform: translateY(-3px);
         }
-    
+
         .item img {
-          max-width: 100%;
-          height: 200px; /* Consistent image height */
-          object-fit: contain;
-          margin-bottom: 10px;
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 10px;
         }
-    
+
         .item h3 {
             font-size: 1em;
             margin: 2px 0;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: normal; /* Allow title to wrap to multiple lines */
-            max-height: 3.6em; /* Adjust as needed to control the number of lines */
-            line-height: 1em; 
-            }
-    
-        .item ul {
-          list-style: none;
-          padding: 0;
-          margin: 0 0;
-          font-size: 0.7em;
+            white-space: normal;
+            max-height: 3.6em;
+            line-height: 1em;
         }
-    
+
+        .item ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.7em;
+        }
+
         .item li {
-          margin-bottom: 5px;
+            margin-bottom: 5px;
         }
 
         .item-details {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Align items to the left */
-            justify-content: space-between; /* Space between price and tags */
-            width: 100%; /* Take up full width of the item */
-            position: relative; /* For positioning the button */
-            }
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+        }
 
-            .property-tags {
+        .property-tags {
             display: flex;
-            flex-wrap: wrap; /* Allow tags to wrap to new lines */
-            margin-top: 10px; /* Add some space above the tags */
-            }
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
 
-            .property-tag {
+        .property-tag {
             background-color: #f0f0f0;
             color: #333;
             padding: 3px 6px;
             margin: 2px;
             border-radius: 5px;
             font-size: 0.7em;
-            }
-
-            .price-charting-button {
-                background-color: #c9bba3; /* Example blue color */
-                color: white;
-                padding: 4px 0px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 0.4em;
-                align-self: flex-end; /* Align button to the right */
-                margin-bottom: 2px; /* Add some space above the button */
-                margin-right: 5px;
-                margin-top: 10px;
-                text-align: justify;
-            }
-    
-        #pathInput {
-          display: flex;
-          justify-content: center;
-          margin-bottom: 20px;
-        }
-    
-        #pathInput input {
-          width: 300px;
-          padding: 8px;
-          margin-right: 10px;
-          border: 1px solid #ddd;
-          border-radius: 5px;
-        }
-    
-        #pathInput button {
-          padding: 8px 15px;
-          background-color: #007bff;
-          color: white;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-    
-        .edit-mode .item {
-          background-color: #f0f0f0;
-          border: 1px solid #999;
-        }
-    
-        .edit-mode .item input,
-        .edit-mode .item select {
-          width: 90%;
-          margin-bottom: 5px;
-          padding: 5px;
-          border: 1px solid #ddd;
-          border-radius: 3px;
-        }
-    
-        .edit-mode .item h3 input {
-          width: 100%;
-        }
-    
-        .edit-mode #tableViewBody input {
-          width: 100%;
-        }
-        
-        .edit-buttons {
-          text-align: center;
-          position: static; /* Remove fixed positioning */
-    margin-right: auto; /* Push it to the left */
-          top: 10px;
-          left: 10px;
-          z-index: 1000;
-          cursor: pointer;
-          padding: 5px 5px;
-          border: none;
-          border-radius: 5px;
-          color: white;
-        }
-    
-        .edit-buttons button {
-          margin: 0 10px;
-          padding: 8px 15px;
-          background-color: #007bff; /* Blue for edit buttons */
-          color: white;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
         }
 
-        .edit-buttons .orange {
-            background-color:  #28a745; /* Blue for edit buttons */
+        .price-charting-button {
+            background-color: #c9bba3;
+            color: white;
+            padding: 4px 0px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.4em;
+            align-self: flex-end;
+            margin-bottom: 2px;
+            margin-right: 5px;
+            margin-top: 10px;
+            text-align: justify;
         }
-    
+
+        .item-notes {
+            font-size: 0.7em;
+            color: #555;
+            margin-top: 5px;
+            text-align: center;
+        }
+
         #tableView {
-          display: none;
+            display: none;
         }
-    
+
         #tableView table {
-          border-collapse: collapse;
-          width: 100%;
-          margin-top: 100px;
-          border: 1px solid #ddd;
-          border-radius: 8px;
-          overflow: hidden; /* Hide overflowing content */
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 100px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
         }
-    
+
         #tableView th,
         #tableView td {
-        background-color: #fff; /* White background for table cells */
-          border: 1px solid #ddd;
-          padding: 10px;
-          text-align: left;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
         }
 
         #tableView th {
-          background-color: #f0f0f0;
-          font-weight: bold;
+            background-color: #f0f0f0;
+            font-weight: bold;
         }
-      </style>
+    </style>
 </head>
+
 <body>
-    <!--<h1 id="catalogTitle"></h1>-->
-   
     <div class="top-bar">
-        <div class="edit-buttons">
-            <!--
-            <button id="toggleEditMode">Toggle Edit Mode</button>
-            <button id="downloadJson">Download JSON</button>
-            -->
-            <button id="toggleTableView" class="orange" onclick="toggleTableView()">[☰ TABLE VIEW]</button>
-        </div>
-        <div>
+        <button id="toggleTableView" class="orange toggle-view" onclick="toggleTableView()">[☰ TABLE VIEW]</button>
+        <div class="summary">
             <h2 id="totalPrice"></h2>
             <h2 id="itemCount"></h2>
         </div>
         <div id="filters">
+            <label for="console-filter">Filter by Console:</label>
+            <select id="console-filter">
+                <option value="all">All</option>
+            </select>
         </div>
         <div class="filter">
-            <div id="search" class="search-class"> 
+            <div id="search" class="search-class">
                 <label for="search-input">Search:</label>
                 <input id="search-input" type="text" placeholder="Search...">
             </div>
         </div>
     </div>
 
-    </div>
     <div id="itemContainer"></div>
     <div id="tableView" style="display: none;">
         <table>
@@ -304,135 +201,83 @@
                     <th>Title</th>
                     <th>Console</th>
                     <th>Estimated Price</th>
+                    <th>Notes</th>
                 </tr>
             </thead>
             <tbody id="tableViewBody"></tbody>
         </table>
     </div>
 
-    <script> 
+    <script>
         let path = "";
         let catalogData = null;
-        let editMode = false;
         let tableView = false;
         let dynamicData = [];
 
-        function refreshCatalog() {
-            path = document.getElementById('basePath').value;
-            if (!path.endsWith('/')) {
-                path += '/';
-            }
-            loadCatalog();
-        }
-
         function loadCatalog() {
-            // Clear previous content
-            //ocument.getElementById('catalogTitle').textContent = '';
             document.getElementById('totalPrice').textContent = '';
-            document.getElementById('filters').innerHTML = '';
+            // Reset filters container
+            const filtersContainer = document.getElementById('filters');
+            filtersContainer.innerHTML = '<label for="console-filter">Filter by Console:</label><select id="console-filter"><option value="all">All</option></select>';
+            const consoleFilter = document.getElementById('console-filter');
             document.getElementById('itemContainer').innerHTML = '';
             document.getElementById('tableViewBody').innerHTML = '';
 
-
-            let base64Str = null
-            
             function getCatalogData() {
-                if (!base64Str) {
-                    return fetch(`${path}results.json`).then(response => response.json());
-                } else {
-                    return new Promise((resolve, reject) => {
-                        try {
-                            let jsonStr = atob(base64Str);
-                            let data = JSON.parse(jsonStr);
-                            resolve(data);
-                        } catch (error) {
-                            reject(error);
-                        }
-                    });
-                }
+                return fetch(`${path}results.json`).then(response => response.json());
             }
 
-            // Fetch and process JSON data
             getCatalogData()
                 .then(data => {
-                    catalogData = data; 
+                    catalogData = data;
 
                     const itemType = data.type || 'Items';
                     const items = data.items || {};
 
-                    // Set catalog title
-                    //document.getElementById('catalogTitle').textContent = `${itemType.charAt(0).toUpperCase() + itemType.slice(1)} Catalog`;
-
-                    // Calculate total price
                     const totalPrice = Object.values(items).reduce((sum, item) => sum + parseFloat(item.estimated_price.replace(/[^\d.]/g, '')), 0);
                     document.getElementById('totalPrice').textContent = `Estimated Total: €${totalPrice.toFixed(2)}`;
 
-                    // Calculate and display item count
                     const itemCount = Object.keys(items).length;
                     document.getElementById('itemCount').textContent = `Total Items: ${itemCount}`;
 
-                    // Generate filters
-                    const allProperties = new Set();
-                    Object.values(items).forEach(item => {
-                        Object.keys(item).forEach(key => {
-                            if (key !== 'title' && key !== 'estimated_price') {
-                                allProperties.add(key);
-                            }
-                        });
-                    });
-
-                    const filtersContainer = document.getElementById('filters');
-                    const filterHtml = `
-                        <div class="filter">
-                            <label for="sort">Sort by:</label>
-                            <select id="sort" onchange="sortItems()">
-                                <option value="title">Title</option>
-                                <option value="price-asc">Price (Low to High)</option>
-                                <option value="price-desc">Price (High to Low)</option>
-                                <option value="platform">Platform</option>
-                            </select>
-                        </div>
-                    `;
-                    filtersContainer.insertAdjacentHTML('beforeend', filterHtml);
-
-                    allProperties.forEach(prop => {
-                        const uniqueValues = [...new Set(Object.values(items).map(item => item[prop]).filter(Boolean))].sort();
-                        const filterHtml = `
-                            <div class="filter">
-                                <label for="${prop}">${prop.charAt(0).toUpperCase() + prop.slice(1)}:</label>
-                                <select id="${prop}" onchange="filterItems()">
-                                    <option value="">All</option>
-                                    ${uniqueValues.map(value => `<option value="${value}">${value}</option>`).join('')}
-                                </select>
-                            </div>
-                        `;
-                        filtersContainer.insertAdjacentHTML('beforeend', filterHtml);
-                    });
-
-                    // Create the dynamic data
                     dynamicData = Object.entries(items).map(([image, properties]) => ({
                         image,
                         properties,
                         shown: true,
                     }));
 
-                    // Generate item cards
-                    const itemContainer = document.getElementById('itemContainer');
-                    itemContainer.innerHTML = ''; // Clear previous items
-                    dynamicData.forEach((entry) => {
-                        const itemHtml = generateItemHtml(entry.image, entry.properties);
-                        itemContainer.insertAdjacentHTML('beforeend', itemHtml);
+                    const uniqueConsoles = [...new Set(Object.values(items).map(item => item.console).filter(console => console))];
+                    uniqueConsoles.sort(); // Sort the consoles alphabetically
+                    uniqueConsoles.forEach(console => {
+                        const option = document.createElement('option');
+                        option.value = console;
+                        option.textContent = console;
+                        consoleFilter.appendChild(option);
                     });
 
-                    // Generate table view
-                    const tableViewBody = document.getElementById('tableViewBody');
-                    tableViewBody.innerHTML = ''; // Clear previous items
-                    dynamicData.forEach((entry) => {
-                        const tableViewHtml = generateTableViewHtml(entry.image, entry.properties);
-                        tableViewBody.insertAdjacentHTML('beforeend', tableViewHtml);
-                    });
+                // Sort 'dynamicData' by the 'title' property before rendering
+                dynamicData.sort((a, b) => a.properties.title.localeCompare(b.properties.title));
 
-                    setupEditModeListeners();
+                // Rendering sorted 'dynamicData' in 'itemContainer'
+                const itemContainer = document.getElementById('itemContainer');
+                dynamicData.forEach((entry) => {
+                    const itemHtml = generateItemHtml(entry.image, entry.properties);
+                    itemContainer.insertAdjacentHTML('beforeend', itemHtml);
+                });
+
+                // Rendering sorted 'dynamicData' in 'tableViewBody'
+                const tableViewBody = document.getElementById('tableViewBody');
+                dynamicData.forEach((entry) => {
+                    const tableViewHtml = generateTableViewHtml(entry.image, entry.properties);
+                    tableViewBody.insertAdjacentHTML('beforeend', tableViewHtml);
+                });
+
+
+                    document.getElementById('search-input').addEventListener('input', searchItems);
+                    document.getElementById('console-filter').addEventListener('change', () => {
+                        filterItemsByConsole();
+                        updateView();
+                    });
                 })
                 .catch(error => {
                     console.error('Error loading catalog:', error);
@@ -440,62 +285,58 @@
                 });
         }
 
-        function updateTotalPrice() {
-            let totalPrice = 0;
-
-            const items = document.querySelectorAll('.item');
-            items.forEach(item => {
-                const priceInput = item.querySelector('input[data-property="estimated_price"]') || item.querySelector('.property-value[data-property="estimated_price"]');
-                const price = parseFloat(priceInput.value || priceInput.textContent.replace(/[^\d.]/g, ''));
-                totalPrice += price;
-            });
-
-            // Update the total price in the DOM
-            document.getElementById('totalPrice').textContent = `Estimated Total: €${totalPrice.toFixed(2)}`;
-        }
-
         function generateItemHtml(image, properties) {
             const platformCodeMap = {
-                'Wii' : 'G11',
+                'Wii': 'G11',
                 'Wii U': 'G96',
-                'PSP' : 'G9',
+                'PSP': 'G9',
                 'PlayStation 4': 'G86',
                 'PlayStation 3': 'G75',
-                'PlayStation 2' : 'G63',
-                'PlayStation Vita' : 'G101',
+                'PlayStation 2': 'G63',
+                'PlayStation Vita': 'G101',
                 'Nintendo Switch': 'G59',
-                'Nintendo Gamecube' : 'G3',
+                'Nintendo Gamecube': 'G3',
                 'PlayStation': 'G72',
                 'Xbox 360': 'G89',
                 'Xbox One': 'G52',
-                'Xbox' : 'G8'
+                'Xbox': 'G8',
+                'Nintendo DS' :'G78',
+                'Nintendo 3DS' : 'G39',
+
             };
 
             const platformCode = platformCodeMap[properties['console']];
             const priceChartingUrl = `https://www.pricecharting.com/search-products?type=prices&q=${encodeURIComponent(properties.title)}&sort=name&broad-category=all&console-uid=${platformCode}&exclude-variants=false&region-name=all&show-images=true`;
+            
+            let addPriceUrl = true;
+
+            if (['PC', 'Blu-Ray', 'Hardware'].includes(properties['console'])) {
+                addPriceUrl = false;
+            }
 
             return `
                 <div class="item" data-image="${image}" ${Object.entries(properties).map(([key, value]) => `data-${key.toLowerCase()}="${value}"`).join(' ')}>
-                <a href="${path}COMPRESSED/${image}" target="_blank">
-                    <img src="${path}COMPRESSED/${image}" alt="${properties.title}">
-                </a>
-                <h3 title="${properties.title}">${properties.title}</h3>
-                <div class="item-details"> 
-                    <ul>
-                    <li><strong>€<span class="property-value" data-property="estimated_price">${parseFloat(properties.estimated_price.replace(/[^\d.]/g, '')).toFixed(2)}</span></strong></li>
-                    </ul>
-                    <div class="property-tags">
-                    ${Object.entries(properties).map(([key, value]) => 
-                        key !== 'title' && key !== 'estimated_price' ? 
-                        `<span class="property-tag">${value}</span>` : 
-                        ''
-                    ).join('')}
-                    </div>
-                    <button class="price-charting-button" onclick="window.open('${priceChartingUrl}', '_blank')">🔍 PriceCharting</button> 
-                </div> 
+                    <a href="${path}COMPRESSED/${image}" target="_blank">
+                        <img src="${path}COMPRESSED/${image}" alt="${properties.title}">
+                    </a>
+                    <h3 title="${properties.title}">${properties.title}</h3>
+                    <div class="item-details"> 
+                        <ul>
+                            <li><strong>€<span class="property-value" data-property="estimated_price">${parseFloat(properties.estimated_price.replace(/[^\d.]/g, '')).toFixed(2)}</span></strong></li>
+                        </ul>
+                        <div class="property-tags">
+                            ${Object.entries(properties).map(([key, value]) =>
+                key !== 'title' && key !== 'estimated_price' && key !== 'notes' ?
+                    `<span class="property-tag">${value}</span>` :
+                    ''
+            ).join('')}
+                        </div>
+                        ${properties.notes ? `<p class="item-notes">${properties.notes}</p>` : ''}
+                        ${addPriceUrl ? `<button class="price-charting-button" onclick="window.open('${priceChartingUrl}', '_blank')">🔍 PriceCharting</button>` : ""}
+                    </div> 
                 </div>
             `;
-            }
+        }
 
         function generateTableViewHtml(image, properties) {
             return `
@@ -503,169 +344,11 @@
                     <td>${properties.title}</td>
                     <td>${properties.console}</td>
                     <td>€${parseFloat(properties.estimated_price.replace(/[^\d.]/g, '')).toFixed(2)}</td>
+                    <td>${properties.notes || ''}</td>
                 </tr>
             `;
         }
 
-        function setupEditModeListeners() {
-            //document.getElementById('toggleEditMode').addEventListener('click', toggleEditMode);
-            //document.getElementById('downloadJson').addEventListener('click', downloadJson);
-        }
-
-        function convertToEditableFields(item) {
-    if (item.classList.contains('item')) {
-        const titleElement = item.querySelector('h3');
-        const titleText = titleElement.textContent;
-        const titleInput = document.createElement('input');
-        titleInput.type = 'text';
-        titleInput.value = titleText;
-        titleElement.textContent = ''; // Clear current text
-        titleElement.appendChild(titleInput); // Insert input field
-
-        const propertyList = item.querySelector('ul');
-        const properties = propertyList.querySelectorAll('li');
-
-        properties.forEach(property => {
-            const nameSpan = property.querySelector('.property-name');
-            const valueSpan = property.querySelector('.property-value');
-            if (valueSpan) {
-                const name = valueSpan.dataset.property || (nameSpan ? nameSpan.textContent.slice(0, -1).toLowerCase() : '');
-                const value = valueSpan.textContent;
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.value = value;
-                input.dataset.property = name;
-                if (name === 'estimated_price') {
-                    input.style.width = '50px';  // Adjust width as needed
-                    input.addEventListener('change', (e) => {
-                        e.target.value = parseFloat(e.target.value).toFixed(2);
-                        updateTotalPrice();
-                    });
-                }
-                valueSpan.replaceWith(input);
-            }
-        });
-    } else if (item.tagName === 'TD') {
-        const text = item.textContent;
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.value = text;
-        item.innerHTML = ''; // Clear current text
-        item.appendChild(input); // Insert input field
-    }
-}
-
-function convertToReadOnlyFields(item) {
-    if (item.classList.contains('item')) {
-        const titleElement = item.querySelector('h3');
-        const titleInput = titleElement.querySelector('input');
-        if (titleInput) {
-            const span = document.createElement('span');
-            span.textContent = titleInput.value;
-            titleElement.textContent = titleInput.value; // Replace input with plain text
-        }
-
-        const inputs = item.querySelectorAll('input');
-        inputs.forEach(input => {
-            const span = document.createElement('span');
-            span.className = 'property-value';
-            span.dataset.property = input.dataset.property;
-            if (input.dataset.property === 'estimated_price') {
-                span.textContent = parseFloat(input.value).toFixed(2);
-            } else {
-                span.textContent = input.value;
-            }
-            input.replaceWith(span);
-        });
-    } else if (item.tagName === 'TD') {
-        const input = item.querySelector('input');
-        if (input) {
-            const text = input.value;
-            item.innerHTML = text; // Replace input with plain text
-        }
-    }
-}
-
-function toggleEditMode() {
-    editMode = !editMode;
-
-    const items = document.querySelectorAll('.item');
-    items.forEach(item => {
-        if (editMode) {
-            convertToEditableFields(item);
-        } else {
-            convertToReadOnlyFields(item);
-        }
-    });
-
-    const tableViewRows = document.querySelectorAll('#tableViewBody tr');
-    tableViewRows.forEach(row => {
-        const cells = row.querySelectorAll('td');
-        cells.forEach(cell => {
-            if (editMode) {
-                convertToEditableFields(cell);
-            } else {
-                convertToReadOnlyFields(cell);
-            }
-        });
-    });
-
-    if (editMode) {
-        document.body.classList.add('edit-mode');
-    } else {
-        document.body.classList.remove('edit-mode');
-    }
-}
-        function saveChanges() {
-            const items = document.querySelectorAll('.item');
-            items.forEach(item => {
-                const image = item.dataset.image;
-                const properties = {};
-                const inputs = item.querySelectorAll('input');
-
-                // Ensure the title is captured and saved
-                //const titleElement = item.querySelector('h3');
-                //properties.title = titleElement.querySelector('input') ? titleElement.querySelector('input').value : titleElement.textContent;
-
-                // Iterate over all inputs in the item
-                inputs.forEach(input => {
-                    if (input.dataset.property === 'estimated_price') {
-                        properties[input.dataset.property] = '€' + parseFloat(input.value).toFixed(2);
-                    } else {
-                        properties[input.dataset.property] = input.value;
-                    }
-                });
-
-                // Update the catalogData with the modified properties
-                catalogData.items[image] = properties;
-            });
-        }
-
-        function downloadJson() {
-            saveChanges();
-
-            // Recreate the original structure based on catalogData
-            const outputData = {
-                type: catalogData.type || 'Items',
-                items: {}
-            };
-
-            for (const image in catalogData.items) {
-                outputData.items[image] = catalogData.items[image];
-            }
-
-            const jsonString = JSON.stringify(outputData, null, 2)
-
-            const blob = new Blob([jsonString], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'catalog.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
 
         function toggleTableView() {
             tableView = !tableView;
@@ -677,40 +360,11 @@ function toggleEditMode() {
             } else {
                 document.getElementById('itemContainer').style.display = 'grid';
                 document.getElementById('tableView').style.display = 'none';
-                document.getElementById('toggleTableView').textContent = '[☰ TABLE VIEW]';
+                document.getElementById('toggleTableView').textContent = '[☞ TABLE VIEW]';
             }
-        }
-
-        function filterItems() {
-            const filters = {};
-            document.querySelectorAll('.filter select').forEach((select) => {
-                if (select.id !== 'sort' && select.value) {  // Exclude the 'sort' dropdown from filtering
-                    filters[select.id] = select.value.toLowerCase();
-                }
-            });
-
-            dynamicData.forEach((entry) => {
-                let show = true;
-                for (let [key, value] of Object.entries(filters)) {
-                    const attribute = key === 'platform' ? 'console' : key;
-                    const itemValue = entry.properties[attribute];
-                    if (!itemValue.toLowerCase().includes(value)) {
-                        show = false;
-                        break;
-                    }
-                }
-                entry.shown = show;
-            });
-
-            updateView();
         }
 
         function searchItems() {
-            if ( document.getElementById('search-input').value == "") {
-                clearSearch()
-                return;
-            }
-
             const searchQuery = document.getElementById('search-input').value.toLowerCase();
             dynamicData.forEach((entry) => {
                 const title = entry.properties.title.toLowerCase();
@@ -721,55 +375,16 @@ function toggleEditMode() {
             updateView();
         }
 
-        function sortItems() {
-            const sortMethod = document.getElementById('sort').value;
-
+        function filterItemsByConsole() {
+            const selectedConsole = document.getElementById('console-filter').value;
             dynamicData.forEach((entry) => {
-                entry.shown = true;
+                console.log(selectedConsole);
+                if (selectedConsole.toLowerCase() === 'all') {
+                    entry.shown = true;
+                } else {
+                    entry.shown = entry.properties.console.toLowerCase() === selectedConsole.toLowerCase();
+                }
             });
-
-            switch (sortMethod) {
-                case 'title':
-                    dynamicData.sort((a, b) => {
-                        const titleA = a.properties.title.toUpperCase();
-                        const titleB = b.properties.title.toUpperCase();
-                        return titleA.localeCompare(titleB);
-                    });
-                    break;
-                case 'price-asc':
-                    dynamicData.sort((a, b) => {
-                        const priceA = parseFloat(a.properties.estimated_price.replace(/[^\d.]/g, ''));
-                        const priceB = parseFloat(b.properties.estimated_price.replace(/[^\d.]/g, ''));
-                        return priceA - priceB;
-                    });
-                    break;
-                case 'price-desc':
-                    dynamicData.sort((a, b) => {
-                        const priceA = parseFloat(a.properties.estimated_price.replace(/[^\d.]/g, ''));
-                        const priceB = parseFloat(b.properties.estimated_price.replace(/[^\d.]/g, ''));
-                        return priceB - priceA;
-                    });
-                    break;
-                case 'platform':
-                    dynamicData.sort((a, b) => {
-                        const platformA = a.properties.console.toUpperCase();
-                        const platformB = b.properties.console.toUpperCase();
-                        return platformA.localeCompare(platformB);
-                    });
-                    break;
-                default:
-                    break;
-            }
-
-            updateView();
-        }
-
-        function clearSearch() {
-            document.getElementById('search-input').value = '';
-            dynamicData.forEach((entry) => {
-                entry.shown = true;
-            });
-            updateView();
         }
 
         function updateView() {
@@ -792,11 +407,8 @@ function toggleEditMode() {
             });
         }
 
-        // Attach event listeners
-        document.getElementById('search-input').addEventListener('input', searchItems);
-
-        // Initial load
         loadCatalog();
     </script>
 </body>
+
 </html>
