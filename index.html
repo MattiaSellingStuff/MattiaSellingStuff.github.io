@@ -255,22 +255,29 @@
                         consoleFilter.appendChild(option);
                     });
 
-                // Sort 'dynamicData' by the 'title' property before rendering
-                dynamicData.sort((a, b) => a.properties.title.localeCompare(b.properties.title));
+                    // Sort 'dynamicData' by the 'title' property before rendering
+                    dynamicData.sort((a, b) => a.properties.title.localeCompare(b.properties.title));
 
-                // Rendering sorted 'dynamicData' in 'itemContainer'
-                const itemContainer = document.getElementById('itemContainer');
-                dynamicData.forEach((entry) => {
-                    const itemHtml = generateItemHtml(entry.image, entry.properties);
-                    itemContainer.insertAdjacentHTML('beforeend', itemHtml);
-                });
+                    const itemContainer = document.getElementById('itemContainer');
 
-                // Rendering sorted 'dynamicData' in 'tableViewBody'
-                const tableViewBody = document.getElementById('tableViewBody');
-                dynamicData.forEach((entry) => {
-                    const tableViewHtml = generateTableViewHtml(entry.image, entry.properties);
-                    tableViewBody.insertAdjacentHTML('beforeend', tableViewHtml);
-                });
+                    // Rendering in itemContainer
+                    dynamicData.forEach((entry) => {
+                        // Check if the 'hidden' property exists and skip this entry if it does
+                        if (!entry.properties.hidden) {
+                            const itemHtml = generateItemHtml(entry.image, entry.properties);
+                            itemContainer.insertAdjacentHTML('beforeend', itemHtml);
+                        }
+                    });
+
+                    // Rendering sorted 'dynamicData' in 'tableViewBody'
+                    const tableViewBody = document.getElementById('tableViewBody');
+                    dynamicData.forEach((entry) => {
+                        // Check if the 'hidden' property exists and skip this entry if it does
+                        if (!entry.properties.hidden) {
+                            const tableViewHtml = generateTableViewHtml(entry.image, entry.properties);
+                            tableViewBody.insertAdjacentHTML('beforeend', tableViewHtml);
+                        }
+                    });
 
 
                     document.getElementById('search-input').addEventListener('input', searchItems);
@@ -300,14 +307,14 @@
                 'Xbox 360': 'G89',
                 'Xbox One': 'G52',
                 'Xbox': 'G8',
-                'Nintendo DS' :'G78',
-                'Nintendo 3DS' : 'G39',
+                'Nintendo DS': 'G78',
+                'Nintendo 3DS': 'G39',
 
             };
 
             const platformCode = platformCodeMap[properties['console']];
             const priceChartingUrl = `https://www.pricecharting.com/search-products?type=prices&q=${encodeURIComponent(properties.title)}&sort=name&broad-category=all&console-uid=${platformCode}&exclude-variants=false&region-name=all&show-images=true`;
-            
+
             let addPriceUrl = true;
 
             if (['PC', 'Blu-Ray', 'Hardware'].includes(properties['console'])) {
@@ -371,6 +378,8 @@
                 const console = entry.properties.console.toLowerCase();
                 const tags = Object.values(entry.properties).filter((value) => value !== title && value !== console).join(' ').toLowerCase();
                 entry.shown = title.includes(searchQuery) || console.includes(searchQuery) || tags.includes(searchQuery);
+
+                if (entry.properties.hidden) entry.shown = false;
             });
             updateView();
         }
@@ -381,8 +390,12 @@
                 console.log(selectedConsole);
                 if (selectedConsole.toLowerCase() === 'all') {
                     entry.shown = true;
+
+                    if (entry.properties.hidden) entry.shown = false;
                 } else {
                     entry.shown = entry.properties.console.toLowerCase() === selectedConsole.toLowerCase();
+
+                    if (entry.properties.hidden) entry.shown = false;
                 }
             });
         }
