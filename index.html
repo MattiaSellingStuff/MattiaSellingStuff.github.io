@@ -325,13 +325,20 @@
             };
 
             const platformCode = platformCodeMap[properties['console']];
-            const priceChartingUrl = `https://www.pricecharting.com/search-products?type=prices&q=${escape(encodeURIComponent(properties.title))}&sort=name&broad-category=all&console-uid=${platformCode}&exclude-variants=false&region-name=all&show-images=true`;
-            const subitoUrl = `https://www.subito.it/annunci-italia/vendita/usato/?q=${escape(encodeURIComponent(properties.title.replace("[HARDWARE]", "")))}`;
-            const ebayUrl = `https://www.ebay.it/sch/i.html?_nkw=${escape(encodeURIComponent(properties.title.replace("[HARDWARE]", "")))}`;
-
-                
-            encodeURIComponent
             
+            function cleanTitle(title) {
+                return encodeURIComponent(title.replace("[HARDWARE]", ""))  // Remove [HARDWARE]
+                    .replace(/%20/g, "+")   // Replace %20 (spaces) with +
+                    .replace(/'/g, "\\'")   // Manually escape apostrophes with a backslash (\' instead of %27)
+                    .replace(/%2B/g, "+");  // Replace encoded plus signs (%2B) with literal plus signs
+            }
+
+            const priceChartingUrl = `https://www.pricecharting.com/search-products?type=prices&q=${cleanTitle(properties.title)}&sort=name&broad-category=all&console-uid=${platformCode}&exclude-variants=false&region-name=all&show-images=true`;
+            const subitoUrl = `https://www.subito.it/annunci-italia/vendita/usato/?q=${cleanTitle(properties.title)}`;
+            const ebayUrl = `https://www.ebay.it/sch/i.html?_nkw=${cleanTitle(properties.title)}`;
+
+
+    
             let addPriceUrl = true;
 
             if (['PC', 'Blu-Ray', 'Hardware'].includes(properties['console'])) {
