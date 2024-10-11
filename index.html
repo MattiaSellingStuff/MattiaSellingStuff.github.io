@@ -168,7 +168,18 @@
             background-color: #f0f0f0;
             font-weight: bold;
         }
-        
+
+        .special-bar {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 
@@ -177,7 +188,7 @@
         <div>
             <button id="toggleTableView" class="orange toggle-view" onclick="toggleTableView()">[☰ TABLE VIEW]</button>
             <button id="downloadExcel" onclick="downloadExcel()" style="display:none;">[📃 DOWNLOAD EXCEL]</button>
-        </div>  
+        </div>
         <div class="summary">
             <h2 id="totalPrice"></h2>
             <h2 id="itemCount"></h2>
@@ -243,7 +254,7 @@
 
                     // Calculate total price for visible items only
                     const totalPrice = visibleItems.reduce(
-                        (sum, item) => sum + parseFloat(item.estimated_price.replace(/[^\d.]/g, '')), 
+                        (sum, item) => sum + parseFloat(item.estimated_price.replace(/[^\d.]/g, '')),
                         0
                     );
                     document.getElementById('totalPrice').textContent = `Estimated Total: €${totalPrice.toFixed(2)}`;
@@ -321,11 +332,10 @@
                 'Xbox': 'G8',
                 'Nintendo DS': 'G78',
                 'Nintendo 3DS': 'G39',
-
             };
 
             const platformCode = platformCodeMap[properties['console']];
-            
+
             function cleanTitle(title) {
                 return encodeURIComponent(title.replace("[HARDWARE]", ""))  // Remove [HARDWARE]
                     .replace(/%20/g, "+")   // Replace %20 (spaces) with +
@@ -337,8 +347,6 @@
             const subitoUrl = `https://www.subito.it/annunci-italia/vendita/usato/?q=${cleanTitle(properties.title)}`;
             const ebayUrl = `https://www.ebay.it/sch/i.html?_nkw=${cleanTitle(properties.title)}`;
 
-
-    
             let addPriceUrl = true;
 
             if (['PC', 'Blu-Ray', 'Hardware'].includes(properties['console'])) {
@@ -346,31 +354,36 @@
             }
 
             return `
-                <div class="item" data-image="${image}" ${Object.entries(properties).map(([key, value]) => `data-${key.toLowerCase()}="${value}"`).join(' ')}>
-                    <a href="${path}COMPRESSED/${image}" target="_blank">
-                        <img src="${path}COMPRESSED/${image}" alt="${properties.title}">
-                    </a>
-                    <h3 title="${properties.title}">${properties.title}</h3>
-                    <div class="item-details"> 
-                        <ul>
-                            <li><strong>€<span class="property-value" data-property="estimated_price">${parseFloat(properties.estimated_price.replace(/[^\d.]/g, '')).toFixed(2)}</span></strong></li>
-                        </ul>
-                        <div class="property-tags">
-                            ${Object.entries(properties).map(([key, value]) =>
+        <div class="item" data-image="${image}" ${Object.entries(properties).map(([key, value]) => `data-${key.toLowerCase()}="${value}"`).join(' ')}>
+            <a href="${path}COMPRESSED/${image}" target="_blank">
+                <img src="${path}COMPRESSED/${image}" alt="${properties.title}">
+            </a>
+
+            <h3 title="${properties.title}">${properties.title}</h3>
+
+            <!-- Special edition bar if the 'special' property exists -->
+            ${properties.special ? `<div class="special-bar">${properties.special}</div>` : ''}
+
+            <div class="item-details">
+                <ul>
+                    <li><strong>€<span class="property-value" data-property="estimated_price">${parseFloat(properties.estimated_price.replace(/[^\d.]/g, '')).toFixed(2)}</span></strong></li>
+                </ul>
+                <div class="property-tags">
+                    ${Object.entries(properties).map(([key, value]) =>
                 key !== 'title' && key !== 'estimated_price' && key !== 'notes' ?
                     `<span class="property-tag">${value}</span>` :
                     ''
             ).join('')}
-                        </div>
-                        ${properties.notes ? `<p class="item-notes">${properties.notes}</p>` : ''}
-                        <div>
-                        ${addPriceUrl ? `<button class="price-charting-button" onclick="window.open('${priceChartingUrl}', '_blank')">🔍 PRICECHARTING</button>` : ""}
-                        <button class="price-charting-button" onclick="window.open('${ebayUrl}', '_blank')">🔍 EBAY</button>
-                        <button class="price-charting-button" onclick="window.open('${subitoUrl}', '_blank')">🔍 SUBITO</button>
-                        </div>
-                    </div> 
+                </div>          
+                ${properties.notes ? `<p class="item-notes">${properties.notes}</p>` : ''}
+                <div>
+                    ${addPriceUrl ? `<button class="price-charting-button" onclick="window.open('${priceChartingUrl}', '_blank')">🔍 PRICECHARTING</button>` : ""}
+                    <button class="price-charting-button" onclick="window.open('${ebayUrl}', '_blank')">🔍 EBAY</button>
+                    <button class="price-charting-button" onclick="window.open('${subitoUrl}', '_blank')">🔍 SUBITO</button>
                 </div>
-            `;
+            </div>
+        </div>
+    `;
         }
 
         function generateTableViewHtml(image, properties) {

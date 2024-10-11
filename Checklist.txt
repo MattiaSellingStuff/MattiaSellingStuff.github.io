@@ -1,0 +1,5 @@
+- Should not sell? Add "hidden"
+- Title Correct? Fix
+- Add Special Edition to Title
+- Add "special" property if needed
+- Check & Adjust Price on Subito, Ebay, PriceCharting
