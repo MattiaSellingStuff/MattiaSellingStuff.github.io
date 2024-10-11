@@ -168,6 +168,7 @@
             background-color: #f0f0f0;
             font-weight: bold;
         }
+        
     </style>
 </head>
 
@@ -324,9 +325,9 @@
             };
 
             const platformCode = platformCodeMap[properties['console']];
-            const priceChartingUrl = `https://www.pricecharting.com/search-products?type=prices&q=${encodeURIComponent(properties.title)}&sort=name&broad-category=all&console-uid=${platformCode}&exclude-variants=false&region-name=all&show-images=true`;
-            const subitoUrl = `https://www.subito.it/annunci-italia/vendita/usato/?q=${encodeURIComponent(properties.title.replace("[HARDWARE]", ""))}`;
-            const ebayUrl = `https://www.ebay.it/sch/i.html?_nkw=${encodeURIComponent(properties.title.replace("[HARDWARE]", ""))}`;
+            const priceChartingUrl = `https://www.pricecharting.com/search-products?type=prices&q=${escape(encodeURIComponent(properties.title))}&sort=name&broad-category=all&console-uid=${platformCode}&exclude-variants=false&region-name=all&show-images=true`;
+            const subitoUrl = `https://www.subito.it/annunci-italia/vendita/usato/?q=${escape(encodeURIComponent(properties.title.replace("[HARDWARE]", "")))}`;
+            const ebayUrl = `https://www.ebay.it/sch/i.html?_nkw=${escape(encodeURIComponent(properties.title.replace("[HARDWARE]", "")))}`;
 
                 
             encodeURIComponent
