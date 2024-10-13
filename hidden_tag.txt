@@ -1,2 +1,12 @@
 ,
-"hidden" : "true"
+			"hidden" : "true"
+
+
+
+
+,
+			"special" : "Collector's Edition"
+
+
+
+●

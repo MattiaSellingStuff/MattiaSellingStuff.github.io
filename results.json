@@ -1484,12 +1484,13 @@
       "notes": ""
     },
     "IMG_5639-smol.jpg": {
-      "title": "ALIENS vs PREDATOR",
+      "title": "ALIENS vs PREDATOR ● Hunter Edition",
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "12.00",
-      "notes": "slightly dented"
+      "estimated_price": "85.00",
+      "notes": "slightly dented",
+      "special" : "Collector's Edition"
     },
     "IMG_5662-smol.jpg": {
       "title": "[HARDWARE] NINTENDO CLASSIC MINI",
@@ -1609,7 +1610,8 @@
       "region": "PAL",
       "cover_language": "ITA",
       "estimated_price": "25.00",
-      "notes": ""
+      "notes": "",
+      "hidden" : "true"
     },
     "IMG_0544-smol.jpg": {
       "title": "ENTER THE MATRIX",
