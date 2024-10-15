@@ -592,7 +592,7 @@
       "console": "PlayStation 2",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "10.00",
+      "estimated_price": "15.00",
       "notes": ""
     },
     "IMG_0574-smol.jpg": {
@@ -608,7 +608,7 @@
       "console": "PlayStation 2",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "12.00",
+      "estimated_price": "10.00",
       "notes": ""
     },
     "IMG_0501-smol.jpg": {
@@ -616,7 +616,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "NLD",
-      "estimated_price": "12.00",
+      "estimated_price": "10.00",
       "notes": ""
     },
     "IMG_0471-smol.jpg": {
@@ -624,7 +624,7 @@
       "console": "PlayStation 4",
       "region": "PAL",
       "cover_language": "FRA",
-      "estimated_price": "15.00",
+      "estimated_price": "10.00",
       "notes": ""
     },
     "IMG_0543-smol.jpg": {
@@ -632,7 +632,7 @@
       "console": "Xbox",
       "region": "NTSC",
       "cover_language": "ENG",
-      "estimated_price": "5.00",
+      "estimated_price": "6.00",
       "notes": "Promotional copy not for resale. lol!"
     },
     "IMG_0532-smol.jpg": {
@@ -640,35 +640,36 @@
       "console": "PlayStation Vita",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "29.99",
+      "estimated_price": "30.00",
       "notes": "Limited Edition",
       "special" : "Collector's Edition"
 
     },
     "IMG_0458-smol.jpg": {
-      "title": "FUTURIUM",
+      "title": "Futuridium",
       "console": "PlayStation 4",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "25.00",
+      "estimated_price": "30.00",
       "notes": "Limited Edition, sealed",
       "special" : "Collector's Edition"
 
     },
     "IMG_5646-smol.jpg": {
-      "title": "GEARS OF WAR 2",
+      "title": "GEARS OF WAR 2 - Limited edition",
       "console": "Xbox 360",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "10.00",
-      "notes": "Edizione limitata"
+      "estimated_price": "20.00",
+      "notes": "Edizione limitata",
+      "special" : "Limited Edition"
     },
     "IMG_0466-smol.jpg": {
       "title": "God of War",
       "console": "PlayStation 4",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "13.00",
       "notes": ""
     },
     "IMG_0577-smol.jpg": {
@@ -710,7 +711,7 @@
       "console": "PC",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "40.00",
+      "estimated_price": "100.00",
       "notes": "Collector's Edition. Missing shirt.",
       "special" : "Collector's Edition"
 
@@ -720,7 +721,7 @@
       "console": "Xbox",
       "region": "PAL",
       "cover_language": "FRA",
-      "estimated_price": "5.00",
+      "estimated_price": "10.00",
       "notes": ""
     },
     "IMG_0444-smol.jpg": {
@@ -728,7 +729,7 @@
       "console": "Xbox One",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "15.00",
+      "estimated_price": "10.00",
       "notes": "Sealed"
     },
     "IMG_5675-smol.jpg": {
@@ -737,14 +738,15 @@
       "region": "PAL",
       "cover_language": "ENG",
       "estimated_price": "50.00",
-      "notes": "Very rare, given out to press at Gamescom Event. Empty."
+      "notes": "Very rare, given out to press at Gamescom Event. Empty.",
+      "special" : "Limited Edition"
     },
     "IMG_5662-smol.jpg": {
       "title": "[HARDWARE] NINTENDO CLASSIC MINI",
       "console": "Hardware",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "100.00",
+      "estimated_price": "75.00",
       "notes": ""
     },
     "IMG_5664-smol.jpg": {
@@ -752,7 +754,7 @@
       "console": "Hardware",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "150.00",
+      "estimated_price": "95.00",
       "notes": "Includes extra sensor"
     },
     "IMG_5665-smol.jpg": {
@@ -760,7 +762,7 @@
       "console": "Hardware",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "300.00",
+      "estimated_price": "180.00",
       "notes": "Complete set with controllers"
     },
     "IMG_5661-smol.jpg": {
@@ -776,7 +778,7 @@
       "console": "Hardware",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "150.00",
+      "estimated_price": "170.00",
       "notes": "Complete kit in original packaging"
     },
     "IMG_5658-smol.jpg": {
@@ -784,7 +786,7 @@
       "console": "Hardware",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "25.00",
+      "estimated_price": "20.00",
       "notes": "Used item, includes no game."
     },
     "IMG_5659-smol.jpg": {
@@ -816,7 +818,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "20.00",
       "notes": "Complete limited edition",
       "special" : "Collector's Edition"
 
@@ -840,7 +842,7 @@
 
     },
     "IMG_0494-smol.jpg": {
-      "title": "ICO & Shadow of the Colossus Classics HD",
+      "title": "ICO & Shadow of the Colossus Collection",
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
@@ -860,7 +862,7 @@
       "console": "Xbox",
       "region": "NTSC",
       "cover_language": "ENG",
-      "estimated_price": "10.00",
+      "estimated_price": "20.00",
       "notes": ""
     },
     "IMG_0459-smol.jpg": {
@@ -884,7 +886,7 @@
       "console": "Xbox",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "8.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_0478-smol.jpg": {
@@ -892,7 +894,7 @@
       "console": "Xbox One",
       "region": "PAL",
       "cover_language": "FRA",
-      "estimated_price": "10.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_0487-smol.jpg": {
@@ -900,9 +902,9 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "20.00",
+      "estimated_price": "16.00",
       "notes": "Limited Edition",
-      "special" : "Collector's Edition"
+      "special" : "Limited Edition"
 
     },
     "IMG_0582-smol.jpg": {
@@ -910,7 +912,7 @@
       "console": "PlayStation 2",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "15.00",
+      "estimated_price": "18.00",
       "notes": ""
     },
     "IMG_0523-smol.jpg": {
@@ -918,7 +920,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "8.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_0583-smol.jpg": {
@@ -944,7 +946,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "15.00",
+      "estimated_price": "10.00",
       "notes": ""
     },
     "IMG_0477-smol.jpg": {
@@ -952,9 +954,9 @@
       "console": "PlayStation 4",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "25.00",
+      "estimated_price": "28.00",
       "notes": "Complete Collector's Edition",
-      "special" : "Collector's Edition"
+      "special" : "Limited Edition"
 
     },
     "IMG_0513-smol.jpg": {
@@ -962,7 +964,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "10.00",
+      "estimated_price": "8.00",
       "notes": ""
     },
     "IMG_0541-smol.jpg": {
@@ -978,8 +980,9 @@
       "console": "PC",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "25.00",
-      "notes": ""
+      "estimated_price": "50.00",
+      "notes": "",
+      "special" : "Collector's Edition"
     },
     "IMG_0607-smol.jpg": {
       "title": "MARIOKART 7",
@@ -1010,7 +1013,7 @@
       "console": "Wii",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "20.00",
       "notes": ""
     },
     "IMG_5670-smol.jpg": {
@@ -1018,7 +1021,7 @@
       "console": "PlayStation 4",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "10.00",
+      "estimated_price": "7.00",
       "notes": "Just the disc"
     },
     "IMG_0534-smol.jpg": {
@@ -1026,7 +1029,7 @@
       "console": "Xbox",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "5.00",
+      "estimated_price": "6.00",
       "notes": ""
     },
     "IMG_0516-smol.jpg": {
@@ -1050,8 +1053,9 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "10.00",
-      "notes": "Special Edition"
+      "estimated_price": "13.00",
+      "notes": "Special Edition",
+      "special" : "Limited Edition"
     },
     "IMG_0469-smol.jpg": {
       "title": "METAL GEAR SOLID V: THE PHANTOM PAIN",
@@ -1059,7 +1063,8 @@
       "region": "PAL",
       "cover_language": "NLD",
       "estimated_price": "15.00",
-      "notes": "Day 1 Edition"
+      "notes": "Day 1 Edition",
+      "special" : "Day One Edition"
     },
     "IMG_0505-smol.jpg": {
       "title": "MICHAEL JACKSON THE EXPERIENCE",
@@ -1074,7 +1079,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "50.00",
+      "estimated_price": "100.00",
       "notes": "Includes functioning night vision goggles.",
       "special": "COLLECTOR'S"
     },
@@ -1091,7 +1096,7 @@
       "console": "PlayStation 2",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "8.00",
       "notes": "Includes strategy guide."
     },
     "IMG_0604-smol.jpg": {
@@ -1115,7 +1120,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "10.00",
+      "estimated_price": "6.00",
       "notes": ""
     },
     "IMG_0428-smol.jpg": {
@@ -1123,7 +1128,7 @@
       "console": "Wii U",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "15.00",
+      "estimated_price": "10.00",
       "notes": "sealed"
     },
     "IMG_0434-smol.jpg": {
@@ -1131,7 +1136,7 @@
       "console": "Wii U",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_0427-smol.jpg": {
@@ -1139,7 +1144,7 @@
       "console": "Wii U",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "10.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_5668-smol.jpg": {
@@ -1147,7 +1152,7 @@
       "console": "Xbox",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "9.95",
+      "estimated_price": "5.00",
       "notes": "Just the disc"
     },
     "IMG_0431-smol.jpg": {
@@ -1155,7 +1160,7 @@
       "console": "Wii U",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "12.00",
       "notes": ""
     },
     "IMG_0600-smol.jpg": {
@@ -1163,7 +1168,7 @@
       "console": "Nintendo 3DS",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "15.00",
+      "estimated_price": "25.00",
       "notes": ""
     },
     "IMG_0592-smol.jpg": {
@@ -1171,7 +1176,7 @@
       "console": "Nintendo 3DS",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "20.00",
+      "estimated_price": "16.00",
       "notes": ""
     },
     "IMG_0606-smol.jpg": {
@@ -1179,7 +1184,7 @@
       "console": "Nintendo 3DS",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "25.00",
+      "estimated_price": "16.00",
       "notes": "",
       "hidden": "true"
     },
@@ -1188,7 +1193,7 @@
       "console": "Nintendo DS",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "25.00",
+      "estimated_price": "40.00",
       "notes": ""
     },
     "IMG_0612-smol.jpg": {
@@ -1196,7 +1201,7 @@
       "console": "Nintendo DS",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "25.00",
       "notes": ""
     },
     "IMG_0596-smol.jpg": {
@@ -1204,7 +1209,7 @@
       "console": "Nintendo DS",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "20.00",
       "notes": ""
     },
     "IMG_5638-smol.jpg": {
@@ -1212,7 +1217,7 @@
       "console": "PC",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "5.00",
+      "estimated_price": "15.00",
       "notes": "Includes box and disc"
     },
     "IMG_0538-smol.jpg": {
@@ -1220,7 +1225,7 @@
       "console": "Xbox",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "10.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_0448-smol.jpg": {
@@ -1228,7 +1233,7 @@
       "console": "PlayStation 4",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "12.00",
       "notes": ""
     },
     "IMG_0519-smol.jpg": {
@@ -1236,7 +1241,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "10.00",
+      "estimated_price": "8.00",
       "notes": "Platinum edition"
     },
     "IMG_0594-smol.jpg": {
@@ -1244,7 +1249,7 @@
       "console": "Nintendo 3DS",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "10.00",
+      "estimated_price": "7.00",
       "notes": ""
     },
     "IMG_0490-smol.jpg": {
@@ -1252,7 +1257,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "12.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_0485-smol.jpg": {
@@ -1260,7 +1265,7 @@
       "console": "PlayStation 3",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "20.00",
+      "estimated_price": "38.00",
       "notes": "",
       "special": "COLLECTOR'S"
     },
@@ -1277,7 +1282,7 @@
       "console": "PlayStation 4",
       "region": "NTSC",
       "cover_language": "ENG",
-      "estimated_price": "25.00",
+      "estimated_price": "20.00",
       "notes": ""
     },
     "IMG_0581-smol.jpg": {
@@ -1293,7 +1298,7 @@
       "console": "PlayStation 4",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "20.00",
+      "estimated_price": "15.00",
       "notes": ""
     },
     "IMG_0561-smol.jpg": {
@@ -1301,7 +1306,7 @@
       "console": "Nintendo GameCube",
       "region": "PAL",
       "cover_language": "ITA",
-      "estimated_price": "15.00",
+      "estimated_price": "12.00",
       "notes": "2 Discs"
     },
     "IMG_0481-smol.jpg": {
@@ -1317,7 +1322,7 @@
       "console": "PlayStation 2",
       "region": "PAL",
       "cover_language": "ENG",
-      "estimated_price": "10.00",
+      "estimated_price": "5.00",
       "notes": ""
     },
     "IMG_0498-smol.jpg": {
